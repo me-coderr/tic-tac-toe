@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+*{
+  font-family: 'Kablammo', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  background-color: rgb(27, 27, 57);
+  height: 100vh;
+  width: 100%;
+}
+
+header{
+  height: 30vh;
+}
+
+.heading{
+  display: flex;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.heading-img{
+  height: 5rem;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.heading-text{
+  font-size: 4.5rem;  
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.board-row{
+  display: flex;
+  align-items: center;
+}
+
+.b-top-0{
+  border-top: 0;
+}
+
+.b-left-0{
+  border-left: 0;
+}
+
+.b-bottom-0{
+  border-bottom: 0;
+}
+
+.b-right-0{
+  border-right: 0;
+}
+
+.square{
+  background-color: rgb(8, 8, 37);
+  box-sizing: content-box;
+  width: 6rem;
+  height: 6rem;
+  font-size: 4rem;
+  color: white;
+  border: 2px solid none;
+  border-radius: 8px;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game{
+  display: inline-block;
+}
+
+.won{
+  font-size: 2rem;
+}
+
+.reset-btn{
+  background-color: red;
+  margin: 4rem 0;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  height: 5rem;
+  font-size: 2.3rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .heading-img{
+    display: none;
+  }  
+}
+
+@media only screen and (max-width: 360px) {
+  .heading-text{
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .heading-img{
+    height: 6rem;
+  }
+  .heading-text{
+    font-size: 6rem;
+  }
+}
